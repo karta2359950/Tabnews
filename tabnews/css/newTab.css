@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    z-index: -1;
+    background-size: cover;
+    -webkit-filter: grayscale(1);
+    transition: -webkit-filter 0.5s, opacity 0.2s;
+}
+
+body {
+  min-height: 75rem;
+}
+
+a{
+    color : black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    font-weight: 600 !important;
+    color: black;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+a:active {
+    font-weight: 600 !important;
+    color: black ;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+input:focus {
+    border-color: #333;
+    box-shadow: none;
+}
+
+/* Introduction Page */
+.intro_page {
+    height: 100vh;
+    z-index: 1;
+}
+
+#introduction {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#introduction_container{
+    height: auto;
+    scroll-behavior: smooth;
+    
+}
+
+#search_block {
+    text-align: center;
+}
+
+#searchBlock ::placeholder {
+    color: white;
+}
+
+/* Top Navbar */
+#body {
+    background-color: ghostwhite;
+    transition: opacity 0.5s, -webkit-filter 0.5;
+}
+
+.navbar {
+    background-color: ghostwhite;
+}
+
+.nav-scroller {
+    display: -ms-flexbox;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-top: -1px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    z-index: 2;
+    height: 2rem;
+    overflow-y: hidden;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-size: .9rem;
+    text-align: center;
+}
+
+#time_screen {
+    color: black;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 150%;
+}
+
+#report_click {
+   font-size: 16px;
+}
+
+/*
+#reportbug{
+    background: ;
+    background-position: center;
+    background-size: cover; 
+}*/
+
+#about_us{
+    /*background-image: linear-gradient(to bottom, rgb(113, 145, 241), rgb(240, 191, 195));*/
+    background-image: url(../defaultImage/introduction_bg_page.jpeg);
+    background-repeat: no-repeat;
+    
+    background-position: bottom center;
+    background-attachment: fixed;
+    
+}
+
+/* News Selector */
+#selector_container{
+    max-width: 85%;
+}
+
+#content_container{
+    max-width: 85%;
+    min-height: 100%;
+}
+
+.news-times {
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+}
+
+.magazine_style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.block{
+    height: 3vh;
+}
+
+.active {
+    font-weight: 400 !important;
+    font-size: 150%;
+    color: black !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.news_img {
+    object-fit: none;
+    object-position: center;
+    height: 300px;
+}
+
+#aboutUsLink {
+    font-style: italic; 
+    color: #dcdde1;
+}
+
+#statistics {
+    position: fixed;
+    bottom: 6vh;
+    right: 30px;
+    z-index: 0;
+    border-radius:50%;
+    box-shadow: 3px 3px 2px black; 
+}
